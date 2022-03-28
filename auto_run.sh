@@ -99,7 +99,7 @@ sleep 1 && clear
 get_underbar
 echo "git push를 진행합니다."
 get_underbar
-git push main
+git push origin
 sleep 1 && clear
 get_underbar
 sleep 1 && echo "모든 작업이 마무리 되었습니다."
