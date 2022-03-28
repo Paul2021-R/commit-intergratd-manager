@@ -10,6 +10,7 @@ get_underbar()
 		i=$(($i + 1))
 	done
 }
+
 PID=`ps -A | grep "/bin/bash ./auto_run.sh" | grep -v "grep" | awk '{ print $1 }'`
 cd ..
 get_underbar
