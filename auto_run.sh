@@ -12,6 +12,7 @@ get_underbar()
 }
 
 PID=`ps -A | grep "/bin/bash ./auto_run.sh" | grep -v "grep" | awk '{ print $1 }'`
+SavedDIR=$PWD
 cd ..
 get_underbar
 date +%y-%m-%d 
@@ -46,7 +47,6 @@ then
 	get_underbar && sleep 1
 	clear && cd commit_management && sh auto_run.sh
 fi
-SavedDIR=$PWD
 cd ./$DIR
 get_underbar && sleep 2
 if [ -d .git ]
