@@ -87,7 +87,7 @@ echo "해당 내용으로 깃 커밋을 진행합니까? (1)Yes / (2)no" && get_
 read answer
 no=2
 if [ $answer -eq $no ] ; then
-	get_underbar && echo "github  업로드를 취소합니다." && 	echo "프로그램을 종료합니다." && get_upderbar
+	get_underbar && echo "github  업로드를 취소합니다." && 	echo "프로그램을 종료합니다." && get_underbar
 	exit
 fi
 get_underbar && echo "git commit 을 진행합니다." && get_underbar
