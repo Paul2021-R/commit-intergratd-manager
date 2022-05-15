@@ -27,8 +27,8 @@ get_underbar
 sleep 1 && clear
 
 get_underbar
-ls -lty | grep "dr" | awk '{ for(i = NR ; i < NR+1 ; i++) printf"%d : %s\n", i, $9 }'
-ls -lty | grep "dr" | awk '{ for(i = NR; i < NR+1 ; i++) printf"%d : %s\n", i, $9 }' > commit_manager.dat
+ls -lt | grep "dr" | awk '{ for(i = NR ; i < NR+1 ; i++) printf"%d : %s\n", i, $9 }'
+ls -lt | grep "dr" | awk '{ for(i = NR; i < NR+1 ; i++) printf"%d : %s\n", i, $9 }' > commit_manager.dat
 DIR_LAST=`cat commit_manager.dat | wc -l`
 
 get_underbar
